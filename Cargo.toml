@@ -1,0 +1,21 @@
+[package]
+name = "p2p"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.4", features = ["derive"] }
+hex = "0.4.3"
+iroh = "0.33.0"
+iroh-base = "0.33.0"
+n0-future = "0.1.2"
+tokio = "1.44.0"
